@@ -1,2 +1,4 @@
 # Unattended-WSUS-Patching
-PS scripts to automate WSUS patching + related CMD and scheduled tasks.
+#2017 08 21
+#Written by: Kristin Anderson
+#This script was intended to run as a scheduled task to apply deadlines on patches to server groups.

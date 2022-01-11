@@ -15,7 +15,7 @@ $newPatches = [datetime]$startofmonth
 $resultsLog = "C:\WSUS Reports\Declined Updates\$reportDate - WSUS Declined Updates.txt"
 $email = new-object Net.Mail.MailMessage
 
-# Connect to WSUS Server
+# Connect to the WSUS Server
 $wsus = [Microsoft.UpdateServices.Administration.AdminProxy]::getUpdateServer(‘ADMIN-WSUS’,$False,"8530")
 $updateScope = New-Object Microsoft.UpdateServices.Administration.UpdateScope
 $updateScope.FromArrivalDate = $newPatches
